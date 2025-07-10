@@ -1,0 +1,34 @@
+.data-preview {
+  background: #fff;
+  border: 1px solid #ddd;
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.table-container {
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 0.4rem 0.6rem;
+  text-align: left;
+}
+
+thead {
+  background: #f3f3f3;
+}
+
+.note {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: #888;
+}

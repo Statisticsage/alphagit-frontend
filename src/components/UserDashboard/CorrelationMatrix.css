@@ -1,0 +1,19 @@
+.correlation-matrix {
+  margin-top: 2rem;
+  background: #fff;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+.correlation-matrix table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.correlation-matrix th,
+.correlation-matrix td {
+  border: 1px solid #ccc;
+  padding: 0.4rem;
+}

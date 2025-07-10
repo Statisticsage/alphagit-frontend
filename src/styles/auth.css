@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to right, rgba(15, 32, 39, 0.85), rgba(44, 83, 100, 0.85)),
+              url("../assets/background.png") center/cover no-repeat;
+  overflow: hidden;
+  position: relative;
+  font-family: 'Orbitron', sans-serif;
+}
+
+/* Auth Box – Glassmorphism */
+.auth-box {
+  background: rgba(0, 0, 0, 0.45);
+  padding: 48px 36px;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 242, 255, 0.25);
+  max-width: 420px;
+  width: 90%;
+  text-align: center;
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  color: #ffffff;
+  border: 1px solid rgba(0, 242, 255, 0.2);
+}
+
+/* Inputs */
+.auth-box input {
+  width: 100%;
+  padding: 14px;
+  margin: 12px 0;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  font-size: 15px;
+  transition: background 0.3s ease;
+}
+
+.auth-box input:focus {
+  background: rgba(255, 255, 255, 0.15);
+  outline: none;
+  border: 1px solid #00f2ff;
+}
+
+/* Placeholder */
+.auth-box input::placeholder {
+  color: #ccc;
+}
+
+/* Button */
+.auth-box button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(to right, #00f2ff, #00d4ff);
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 12px rgba(0, 242, 255, 0.3);
+}
+
+.auth-box button:hover {
+  background: linear-gradient(to right, #00d8e0, #00bcd4);
+  transform: scale(1.03);
+}
+
+/* Links */
+.auth-box a {
+  color: #00f2ff;
+  text-decoration: none;
+  font-size: 14px;
+  display: inline-block;
+  margin-top: 12px;
+  transition: color 0.2s;
+}
+
+.auth-box a:hover {
+  text-decoration: underline;
+  color: #00d4ff;
+}

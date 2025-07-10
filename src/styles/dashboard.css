@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: radial-gradient(ellipse at top left, #0f2027, #203a43, #2c5364);
+  color: #e0e0e0;
+}
+
+.analytics-dashboard-wrapper {
+  height: 100vh;
+  overflow: auto; /* Allows vertical scroll */
+  padding: 20px 40px;
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(10px);
+}
+
+.analytics-dashboard-container {
+  max-height: calc(100vh - 40px);
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+
+/* Header */
+.analytics-dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.analytics-dashboard-title {
+  font-size: 2rem;
+  color: #00f2ff;
+  margin: 0;
+}
+
+.analytics-report-download-btn {
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  background: #00f2ff;
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.analytics-report-download-btn:hover {
+  background: #00cbe0;
+}
+
+/* Loading / Error */
+.analytics-loading-container,
+.analytics-error-container,
+.analytics-queued-message {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.analytics-loading-spinner {
+  width: 30px;
+  height: 30px;
+  border: 4px solid rgba(0, 255, 255, 0.2);
+  border-top: 4px solid #00f2ff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 20px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.analytics-dashboard-loading-text,
+.analytics-dashboard-error-text {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+/* Summary */
+.analytics-summary-section,
+.analytics-plots-section,
+.analytics-dynamic-plots-section,
+.analytics-prediction-section {
+  margin-bottom: 40px;
+}
+
+.analytics-section-title {
+  font-size: 1.5rem;
+  color: #00f2ff;
+  border-bottom: 1px solid rgba(0, 255, 255, 0.2);
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+}
+
+.analytics-summary-card {
+  background: rgba(0, 255, 255, 0.06);
+  padding: 20px;
+  border-radius: 12px;
+  color: #ccc;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  border: 1px solid rgba(0, 255, 255, 0.1);
+}
+
+.analytics-insights-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-left: 4px solid #00f2ff;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.analytics-insights-title {
+  color: #00f2ff;
+  margin-bottom: 10px;
+}
+
+.analytics-insights-text {
+  color: #ddd;
+}
+
+/* Plot Grid */
+.analytics-plotly-charts-grid,
+.analytics-dynamic-plots-grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+/* Plot Card */
+.analytics-plotly-chart,
+.analytics-dynamic-plot-card {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 255, 255, 0.08);
+  transition: 0.3s ease-in-out;
+}
+
+.analytics-plotly-chart:hover,
+.analytics-dynamic-plot-card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 16px rgba(0, 255, 255, 0.1);
+}
+
+.analytics-plotly-chart-title,
+.analytics-dynamic-plot-title {
+  color: #00f2ff;
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+}
+
+.analytics-dynamic-plot-image {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #444;
+}
+
+/* Prediction Results */
+.analytics-prediction-card {
+  background: rgba(0, 255, 255, 0.06);
+  padding: 24px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  border: 1px solid rgba(0, 255, 255, 0.08);
+}
+
+.analytics-prediction-title {
+  color: #00f2ff;
+  font-size: 1.3rem;
+  margin-bottom: 16px;
+}
+
+.analytics-prediction-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.analytics-prediction-metric {
+  flex: 1 1 200px;
+}
+
+.analytics-prediction-label {
+  display: block;
+  font-weight: bold;
+  color: #00f2ff;
+}
+
+.analytics-prediction-value {
+  color: #ccc;
+  margin-top: 4px;
+}
+
+/* Charts */
+.analytics-chart-container {
+  margin-top: 30px;
+}
+
+.analytics-chart-title {
+  color: #00f2ff;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* Error Plot */
+.analytics-plot-error {
+  background: rgba(255, 0, 0, 0.1);
+  padding: 16px;
+  border-radius: 10px;
+  color: #fff;
+  text-align: center;
+}

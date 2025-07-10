@@ -1,0 +1,10 @@
+# Dependency folders
+node_modules/
+dist/
+build/
+
+# Environment variables
+.env
+
+# IDE/editor settings
+.vscode/
