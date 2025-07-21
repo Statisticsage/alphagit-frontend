@@ -1,12 +1,52 @@
-# React + Vite
+# Alpha Vision – Frontend (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Alpha Vision** is an AI-powered Business Intelligence (BI) platform that empowers users to upload datasets, visualize trends, generate insights, and interact with their data through an intelligent chatbot interface — all from a responsive, modular UI.
 
-Currently, two official plugins are available:
+This repository contains the **frontend application** built with **React + Vite** and connected to the backend powered by **FastAPI**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+##  Key Features
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+✅ Upload `.csv`, `.xls`, or `.xlsx` files for processing  
+✅ Intelligent charting (bar, line, radar, pie, scatter, histogram, KDE)  
+✅ Smart Query Bar for natural-language insights  
+✅ In-dashboard **AI Chatbot** assistant  
+✅ Real-time statistical summaries and regression metrics  
+✅ Data correlation matrix  
+✅ Report download (PDF)  
+✅ JWT-secured login system (optional)
+
+---
+
+##  UI Highlights
+
+| Landing & Upload | Predictions | User Analytics |
+|------------------|-------------|----------------|
+| ![Home](./screenshots/alpha_home.png) | ![Prediction](./screenshots/alpha_predictions.png) | ![Analytics](./screenshots/alpha_dashboard.png) |
+
+
+
+---
+
+## 🔧 Tech Stack
+
+| Layer        | Technology               |
+|--------------|--------------------------|
+| Framework    | React (Vite)             |
+| Styling      | Custom CSS + Variables   |
+| Charting     | Chart.js (`react-chartjs-2`) |
+| State Mgmt   | useState, useEffect, useMemo |
+| Chatbot      | Dashboard-integrated AI Assistant |
+| Data Requests| Fetch/POST to FastAPI backend |
+| Deployment   | Vercel / Netlify-ready   |
+
+---
+
+## Getting Started
+
+### 1 Clone the repo
+
+```bash
+git clone https://github.com/your-username/alpha-vision-frontend.git
+cd alpha-vision-frontend
